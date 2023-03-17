@@ -1,5 +1,5 @@
 -- Discord Webhook
-exports('createWebhook', function(webhook, pureContent, color, title, message, footer)
+createWebhook = function(webhook, pureContent, color, title, message, footer)
   local content = {
     {
         ["color"] = color,
@@ -18,4 +18,4 @@ json.encode({
   avatar_url = Config.Avatar,
   content = pureContent
 }), { ['Content-Type'] = 'application/json' })
-end)
+end

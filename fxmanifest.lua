@@ -8,3 +8,5 @@ version '1.0.0'
 
 shared_script 'config.lua'
 server_script 'server/main.lua'
+
+server_export 'createWebhook'
