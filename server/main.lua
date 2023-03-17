@@ -19,3 +19,5 @@ json.encode({
   content = pureContent
 }), { ['Content-Type'] = 'application/json' })
 end
+
+exports('createWebhook', createWebhook)
